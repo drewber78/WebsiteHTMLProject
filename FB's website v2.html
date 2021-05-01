@@ -3,12 +3,12 @@
 
     <head>
     <meta charset="UTF-8"
-    <title>The Forgotten Bastards Cool Website</title>
+    <title><h1><p style="color:#33FFFE";>The Forgotten Bastards Cool Website</p></h1></title>
     </head>
 <body background="https://www.ama.org/wp-content/uploads/2019/01/ghost-ads-image.jpg?resize=1360%2C550">
 
 <h3>
-    Enter your information as asked below
+    <p style="color:#33FFFE";>Enter your information as asked below</p>
 </h3>
 
 
@@ -33,29 +33,30 @@
         <label for="Located">Location:</label>
         <input type="text" name="Located" id="Located">
 
-        <label for="Datesubmitted">Date:</label>
-        <input type="date" name="Datesubmitted" id="Datesubmitted"
+        <label for="Datesubmitted">Today's Date:</label>
+        <input type="date" id="Datesubmitted" name="date-today" value="2021-04-30" min="2000-01-01" max="2100-12-31">
     </p>
 
     <p style="color:#33FFFE";>
         <input type="submit" onclick="Enter" id="submit">
         <input type="reset">
+        document.getElementById("submit").addEventListener("click", function(event){
+            event.preventDefault()
+            var Groupname = document.getElementById(Groupname).value;
+            
+            if(Groupname = "Forgotten Bastards","FBs") {
+                alert (Your Group Is The Coolest)
+            }
+            Else {
+                alert (Your Group Is Not As Cool As the FBs)
+            }
+        });
     </p>
+
+
+
+
 </form>
-
-document.getElementById("submit").addEventListener("click", function(event){
-    event.preventDefault()
-    var Groupname = document.getElementById(Groupname).value;
-    
-    if(Groupname = "Forgotten Bastards","FBs") {
-        alert (Your Group Is The Coolest)
-    }
-    Else {
-        alert (Your Group Is Not As Cool As the FBs)
-    }
-});
-
-
 
 </body>
 </html>

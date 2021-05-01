@@ -2,8 +2,8 @@
 
 /* Connect to the local server using AD DS Windows Authentication system */
 
-$serverName = "SQLServer1\\SQLEXPRESS";
-$connectionInfo = array("Database"=>"FBs_Big_Data", "UID"=>"FBadmin", "PWD"=>"ForgottenBastards!", "CharacterSet"=>"UTF-8");
+$serverName = "SQLSERVER1\\SQLEXPRESS";
+$connectionInfo = array("Databases"=>"FBs_Big_Data", "UID"=>"FBadmin", "PWD"=>"ForgottenBastards!", "CharacterSet"=>"UTF-8");
 
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 

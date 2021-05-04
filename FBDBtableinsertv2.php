@@ -4,7 +4,7 @@
 
 $serverName = "SQLSERVER1\SQLEXPRESS";
 $connectionInfo = array(
-	"Database"=>"FBs_Big_Data",
+	"Database"=>"FBs_Website_table1",
 	"CharacterSet"=>"UTF-8"
 );
 
@@ -18,7 +18,7 @@ if( $conn ) {
 }  
 
 /* Define the query */  
-$tsql1 = "INSERT INTO dbo.FB_Website_table (Groupname, Firstname, Lastname, Located, [Date submitted])  
+$tsql1 = "INSERT INTO dbo.FB_Website_table1 (Groupname, Firstname, Lastname, Located, [Date submitted])  
            VALUES (?, ?, ?, ?, ?)";  
 
 /* Construct the parameter array from HTML variable inputs */  

@@ -33,7 +33,7 @@ $params1 = array(
 	array($Firstname, null),
 	array($Lastname, null),
 	array($Located, null),
-	array($Datesubmitted , null),
+	date($Datesubmitted , null),
            );    
 
 /* Execute the INSERT query. */  
@@ -51,4 +51,12 @@ if( $stmt1 )
      echo "Connection could not be established.<br />";
      die( print_r( sqlsrv_errors(), true));
 }
+
+
+//Set Refresh header using PHP.
+header( "refresh:5;url=http://www.youtube.com/watch?v=dQw4w9WgXcQ" );
+
+//Print out some content for example purposes.
+echo 'This page will be redirected in 5 seconds.';
+
 ?>
